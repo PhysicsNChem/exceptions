@@ -9,15 +9,18 @@
 using namespace std;
 
 char character(char start, int offset);
+void test(char start, int offset);
 
 
+int main() {
+    
+}
 
-int main()
-{
+void test(char start, int offset) { //method to offload tests so that this block doesn't have to be repeated 5 times
     try {
-        cout << character('a', 'Z');
+        cout << character(start, offset);
     }
-    catch(invalidCharacterException e) {
+    catch (invalidCharacterException e) {
         cout << "Exception: " << e.what() << " (invalidCharacterException)" << endl;
     }
     catch (invalidRangeException r) {
