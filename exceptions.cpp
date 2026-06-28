@@ -16,6 +16,12 @@ int main() {
     test('a', 1);
 
     test('a', -1);
+
+    test('Z', -1);
+
+    test('?', 5);
+
+    test('A', 32);
 }
 
 void test(char start, int offset) { //method to offload tests so that this block doesn't have to be repeated 5 times
