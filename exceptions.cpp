@@ -13,12 +13,14 @@ void test(char start, int offset);
 
 
 int main() {
-    
+    test('a', 1);
+
+    test('a', -1);
 }
 
 void test(char start, int offset) { //method to offload tests so that this block doesn't have to be repeated 5 times
     try {
-        cout << character(start, offset);
+        cout << character(start, offset) << endl;
     }
     catch (invalidCharacterException e) {
         cout << "Exception: " << e.what() << " (invalidCharacterException)" << endl;
