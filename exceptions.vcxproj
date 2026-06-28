@@ -125,6 +125,9 @@
   <ItemGroup>
     <ClCompile Include="exceptions.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InvalidCharacterException.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
