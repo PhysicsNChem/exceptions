@@ -14,12 +14,18 @@ char character(char start, int offset);
 int main()
 {
     cout << "Hello World!\n";
-    cout << character('?', 'Z');
+    try {
+        cout << character('?', 'Z');
+    }
+    catch(invalidCharacterException e) {
+        cout << "Exception: " << e.what() << " (invalidCharacterException)" << endl;
+    }
+    
 }
 
 char character(char start, int offset) {
     if (!isalpha(start)) { //check
-        throw InvalidCharacterException();
+        throw invalidCharacterException();
     }
     
     int target = static_cast<int>(start) + offset;

@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class InvalidCharacterException : public runtime_error {
+class invalidCharacterException : public runtime_error {
 public:
-	InvalidCharacterException() : runtime_error("Wrong character") {} 
+	invalidCharacterException() : runtime_error("Non alphabetical character entered") {}
 };
